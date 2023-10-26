@@ -62,7 +62,7 @@ class Ffmpeg < Formula
   depends_on "dafyk/mpv/speex"
   depends_on "dafyk/mpv/srt"
   depends_on "dafyk/mpv/svt-av1"
-  depends_on "dafyk/mpv/theora"
+  #depends_on "dafyk/mpv/theora"
   depends_on "dafyk/mpv/webp"
   depends_on "dafyk/mpv/x264"
   depends_on "dafyk/mpv/x265"
@@ -148,7 +148,6 @@ class Ffmpeg < Formula
       --enable-libspeex
       --enable-libsrt
       --enable-libsvtav1
-      --enable-libtheora
       --enable-libvidstab
       --enable-libvorbis
       --enable-libvpx
@@ -162,6 +161,7 @@ class Ffmpeg < Formula
       --enable-openssl
       --enable-lcms2
 
+      --disable-libtheora
       --disable-logging
       --disable-htmlpages
       --disable-podpages
