@@ -8,6 +8,11 @@ class Cmake < Formula
   license "BSD-3-Clause"
   head "https://gitlab.kitware.com/cmake/cmake.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "252d3645a0bd167133690f56dab71a00fa4bca833955196d3183f7cd82e842b0"
+  end
+
   # The "latest" release on GitHub has been an unstable version before, and
   # there have been delays between the creation of a tag and the corresponding
   # release, so we check the website's downloads page instead.

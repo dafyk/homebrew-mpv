@@ -5,6 +5,11 @@ class JpegXl < Formula
   sha256 "c70916fb3ed43784eb840f82f05d390053a558e2da106e40863919238fa7b420"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "ef9558d9de2e9e4adc228b106526f880f63377777617748605ec2ea74f049847"
+  end
+
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)

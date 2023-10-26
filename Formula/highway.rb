@@ -6,6 +6,11 @@ class Highway < Formula
   license "Apache-2.0"
   head "https://github.com/google/highway.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "7d2234aa5e48bb9a3bb98877a164ef292fa87c477a4702829c780babed420c40"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
 
   # These used to be bundled with `jpeg-xl`.

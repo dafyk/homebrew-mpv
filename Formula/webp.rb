@@ -6,6 +6,11 @@ class Webp < Formula
   license "BSD-3-Clause"
   head "https://chromium.googlesource.com/webm/libwebp.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "9e4fa8f4291e4dd251061aab73b9061f45cf59cc7fbe89d0665823171acc87a7"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/giflib"
   depends_on "dafyk/mpv/jpeg-turbo"

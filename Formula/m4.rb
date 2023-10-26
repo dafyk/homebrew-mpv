@@ -6,6 +6,11 @@ class M4 < Formula
   sha256 "63aede5c6d33b6d9b13511cd0be2cac046f2e70fd0a07aa9573a04a82783af96"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "e3c6222b76d98e7152116a7a7d2e77ea5f8f92ac4d8970b3c084773a7f559bd5"
+  end
+
   keg_only :provided_by_macos
 
   def install

@@ -5,6 +5,11 @@ class Dav1d < Formula
   sha256 "a4003623cdc0109dec3aac8435520aa3fb12c4d69454fa227f2658cdb6dab5fa"
   license "BSD-2-Clause"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "53233c17716b4b2f7b96e2adb0fad39a62f079fc95bbedf70f1bf6995928e797"
+  end
+
   depends_on "dafyk/mpv/meson" => :build
   depends_on "dafyk/mpv/ninja" => :build
   depends_on "dafyk/mpv/nasm" => :build

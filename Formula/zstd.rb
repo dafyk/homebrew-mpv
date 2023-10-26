@@ -8,6 +8,11 @@ class Zstd < Formula
   license "BSD-3-Clause"
   head "https://github.com/facebook/zstd.git", branch: "dev"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "6a858786f0392e705473cccc8b77e36529aaee0571a743da76ddec9ca51341da"
+  end
+
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)

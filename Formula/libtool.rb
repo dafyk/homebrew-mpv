@@ -6,6 +6,11 @@ class Libtool < Formula
   sha256 "4f7f217f057ce655ff22559ad221a0fd8ef84ad1fc5fcb6990cecc333aa1635d"
   license "GPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "f156d18c6c576958b1b662a10c5eea4d94fa4dc72cd29f52e02fbc3c55a4f1d4"
+  end
+
   depends_on "dafyk/mpv/m4"
 
   def install

@@ -8,6 +8,11 @@ class Lz4 < Formula
   license "BSD-2-Clause"
   head "https://github.com/lz4/lz4.git", branch: "dev"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "e48ad361949e5c08bf5861ffbf736b7e8dab88658d2306dc305b86cc682bedea"
+  end
+
   livecheck do
     url :stable
     strategy :github_latest

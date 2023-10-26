@@ -9,6 +9,11 @@ class Autoconf < Formula
     "GPL-3.0-or-later" => { with: "Autoconf-exception-3.0" },
   ]
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "f8225c3cfe97d4adc784563344b665ea2984b5275d9a3970aec53d4a4f9c1f3f"
+  end
+
   depends_on "dafyk/mpv/m4"
   uses_from_macos "perl"
 

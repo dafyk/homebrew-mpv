@@ -5,6 +5,11 @@ class Aribb24 < Formula
   sha256 "88b58dd760609372701087e25557ada9f7c6d973306c017067c5dcaf9e2c9710"
   license "LGPL-3.0-only"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "8ad2a6bc1a19781df217bcdf10d59b8cba89bee0042fd241b5fdcc053ebe7c29"
+  end
+
   depends_on "dafyk/mpv/autoconf" => :build
   depends_on "dafyk/mpv/automake" => :build
   depends_on "dafyk/mpv/libtool" => :build

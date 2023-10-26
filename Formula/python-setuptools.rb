@@ -7,6 +7,11 @@ class PythonSetuptools < Formula
 
   depends_on "dafyk/mpv/python@3.11" => :build
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "4f36a0816dc7fccdb0394c53268fc2c0df4279a060cde0b6cdb05211afe9dfba"
+  end
+
   def pythons
     deps.map(&:to_formula)
         .select { |f| f.name.match?(/^python@\d\.\d+$/) }

@@ -17,6 +17,12 @@ class Readline < Formula
     end
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "fdc96a8b4217239185e2c1fe799e548fcbb71ca5b326a44e9735cbe9954df2ec"
+  end
+
+
   # We're not using `url :stable` here because we need `url` to be a string
   # when we use it in the `strategy` block.
   livecheck do

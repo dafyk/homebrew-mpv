@@ -8,6 +8,11 @@ class Brotli < Formula
   license "MIT"
   head "https://github.com/google/brotli.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "b6a76a0b8095605db1c7b3309b2927c8c7ea15decca604e314002599d97a89ae"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
 
   def install

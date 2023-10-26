@@ -7,6 +7,11 @@ class Libffi < Formula
 
   keg_only :provided_by_macos
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "43dad00eb1a354ff66e46165eaaaeb1fa0194123ce61d46e9e7074f132853065"
+  end
+
   def install
     system "./autogen.sh" if build.head?
     system "./configure", *std_configure_args

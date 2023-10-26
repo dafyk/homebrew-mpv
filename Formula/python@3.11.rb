@@ -10,6 +10,11 @@ class PythonAT311 < Formula
     regex(%r{href=.*?v?(3\.11(?:\.\d+)*)/?["' >]}i)
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "aed1f0bd6d53923f16736f21267da25066b3c07ae7a3110629433b68af173d76"
+  end
+
   # setuptools remembers the build flags python is built with and uses them to
   # build packages later. Xcode-only systems need different flags.
   pour_bottle? only_if: :clt_installed

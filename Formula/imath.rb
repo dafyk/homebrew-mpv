@@ -5,6 +5,11 @@ class Imath < Formula
   sha256 "f1d8aacd46afed958babfced3190d2d3c8209b66da451f556abd6da94c165cf3"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "8ae44f14953df65521add1bb379d5abffff4bfb88a4a1fed7056e90d98b50b1d"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
 
   # These used to be provided by `ilmbase`

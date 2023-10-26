@@ -8,6 +8,11 @@ class Bison < Formula
   license "GPL-3.0-or-later"
   version_scheme 1
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "c4754d460508ca58f6ced4091d974fa91de3abe08195a784bab5c61d8ea4226d"
+  end
+
   keg_only :provided_by_macos
 
   uses_from_macos "m4"

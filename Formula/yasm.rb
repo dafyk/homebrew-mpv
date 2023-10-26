@@ -5,6 +5,11 @@ class Yasm < Formula
   mirror "https://ftp.openbsd.org/pub/OpenBSD/distfiles/yasm-1.3.0.tar.gz"
   sha256 "3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "ee28997ccf7e42a8d7c3cde4c2e5e14a611f502ff688d63cbc393aa26be3fae5"
+  end
+
   livecheck do
     url "https://yasm.tortall.net/Download.html"
     regex(/href=.*?yasm[._-]v?(\d+(?:\.\d+)+)\.t/i)

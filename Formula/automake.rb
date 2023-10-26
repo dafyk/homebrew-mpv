@@ -6,6 +6,11 @@ class Automake < Formula
   sha256 "f01d58cd6d9d77fbdca9eb4bbd5ead1988228fdb73d6f7a201f5f8d6b118b469"
   license "GPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "9a36bb7cd4c7e0524841ed65661f95ae9722f09760694e3be994e9895f9b7209"
+  end
+
   depends_on "dafyk/mpv/autoconf"
 
   def install

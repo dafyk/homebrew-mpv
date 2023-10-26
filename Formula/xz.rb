@@ -16,6 +16,11 @@ class Xz < Formula
     "GPL-3.0-or-later",
   ]
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "0bfb9a7d819bb89e4e92fc9b63cd32ebd3dd2fd7d475f625b2cb550e16faa792"
+  end
+
   def install
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",

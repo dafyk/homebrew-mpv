@@ -15,6 +15,11 @@ class JpegTurbo < Formula
     end
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "79f7b4384b5e2b1429248b7823b4fed71d6138ab467b7163df7ac04685e99050"
+  end
+
   # Versions with a 90+ patch are unstable (e.g., 2.1.90 corresponds to
   # 3.0 beta1) and this regex should only match the stable versions.
   livecheck do

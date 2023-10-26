@@ -14,6 +14,11 @@ class Sqlite < Formula
     end
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "5cc6e02ec5c15ae876542e4d53feed7c353b7d8f118e9e0d9d64a88b01598b0c"
+  end
+
   keg_only :provided_by_macos
 
   depends_on "dafyk/mpv/readline"

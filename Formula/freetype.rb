@@ -6,6 +6,11 @@ class Freetype < Formula
   sha256 "12991c4e55c506dd7f9b765933e62fd2be2e06d421505d7950a132e4f1bb484d"
   license "FTL"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "9b86ef6d9755b911d082045fc6c638275d9f082fdaccb0c3814c6ef31e87d7df"
+  end
+
   livecheck do
     url :stable
     regex(/url=.*?freetype[._-]v?(\d+(?:\.\d+)+)\.t/i)

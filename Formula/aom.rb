@@ -6,6 +6,11 @@ class Aom < Formula
       revision: "7ade96172b95adc91a5d85bf80c90989cd543ee8"
   license "BSD-2-Clause"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "33d7df8bed3177b61d43a7f3ce0bfc80d3068f4e358b67e0f31ad91ecc914bc0"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/yasm" => :build
   depends_on "dafyk/mpv/pkg-config" => :build

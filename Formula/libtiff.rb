@@ -6,6 +6,11 @@ class Libtiff < Formula
   sha256 "88b3979e6d5c7e32b50d7ec72fb15af724f6ab2cbf7e10880c360a77e4b5d99a"
   license "libtiff"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "f09747d6d07a5dee83f26226ae471844d5c644ce3856194c134f4cb1a4e98390"
+  end
+
   livecheck do
     url "https://download.osgeo.org/libtiff/"
     regex(/href=.*?tiff[._-]v?(\d+(?:\.\d+)+)\.t/i)

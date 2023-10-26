@@ -8,6 +8,11 @@ class LittleCms2 < Formula
   license "MIT"
   version_scheme 1
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "e340dc1cf28ddaa33d43017bb182c75c559cbda9fca6200da1297e8f158c8af2"
+  end
+
   # The Little CMS website has been redesigned and there's no longer a
   # "Download" page we can check for releases. As of writing this, checking the
   # "Releases" blog posts seems to be our best option and we just have to hope

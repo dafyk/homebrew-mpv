@@ -6,6 +6,11 @@ class Meson < Formula
   license "Apache-2.0"
   head "https://github.com/mesonbuild/meson.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "99dc45ffcc3c62acbd374beb6c4d06289f8d5b9edf3560e157069fc972927776"
+  end
+
   depends_on "dafyk/mpv/python-setuptools" => :build
   depends_on "dafyk/mpv/ninja"
   depends_on "dafyk/mpv/python@3.11"

@@ -11,6 +11,11 @@ class Ninja < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "f266469c13752681d4a0c9f89a79d61e65f98537f0ad5b9234cec86b4837d95e"
+  end
+
   uses_from_macos "python" => :build
 
   # Fix `source code cannot contain null bytes` for Python 3.11.4+
