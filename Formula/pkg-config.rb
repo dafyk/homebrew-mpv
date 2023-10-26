@@ -12,6 +12,11 @@ class PkgConfig < Formula
     regex(/href=.*?pkg-config[._-]v?(\d+(?:\.\d+)+)\./i)
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle/"
+    sha256 high_sierra: "29b23e0393b0ffab8c3236a2f01297eb4f228c42ba05b3970404eafe81b74bce"
+  end
+
   def install
     pc_path = %W[
       #{HOMEBREW_PREFIX}/lib/pkgconfig
