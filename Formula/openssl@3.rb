@@ -15,6 +15,12 @@ class OpensslAT3 < Formula
     regex(/href=.*?openssl[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "03dc205680f69d951eceab4a0e117a6e897a01c5c77e7fcdfdfc1f466db668f0"
+  end
+
+
   depends_on "dafyk/mpv/ca-certificates"
 
   link_overwrite "bin/c_rehash", "bin/openssl", "include/openssl/*"
