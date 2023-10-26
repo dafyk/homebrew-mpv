@@ -10,6 +10,12 @@ class CaCertificates < Formula
     regex(/href=.*?cacert[._-](\d{4}-\d{2}-\d{2})\.pem/i)
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "efd7e291492da37aa17c543a201f4f81f438647f839c630e7a4b292c5843fa34"
+  end
+
+
   def install
     pkgshare.install "cacert-#{version}.pem" => "cacert.pem"
   end
