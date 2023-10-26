@@ -10,6 +10,11 @@ class Mpdecimal < Formula
     regex(/href=.*?mpdecimal[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "7ce21e94775bbe36a70ccc514d14b4042683b598477e133066582fecf8f4a1bc"
+  end
+
   def install
     system "./configure", "--prefix=#{prefix}"
     system "make"
