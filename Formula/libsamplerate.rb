@@ -5,6 +5,11 @@ class Libsamplerate < Formula
   sha256 "16e881487f184250deb4fcb60432d7556ab12cb58caea71ef23960aec6c0405a"
   license "BSD-2-Clause"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "67a1a12462b85fbb2563d21ba87000503c23e76287dbf87dc7fbeec846014ae1"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/pkg-config" => :build
 

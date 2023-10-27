@@ -5,6 +5,11 @@ class Fontconfig < Formula
   sha256 "dba695b57bce15023d2ceedef82062c2b925e51f5d4cc4aef736cf13f60a468b"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "62faec3a896ca18721353815bc7d9515a58f08bfbcf7286cacfc71bd2b816160"
+  end
+
   livecheck do
     url :stable
     regex(/href=.*?fontconfig[._-]v?(\d+\.\d+\.(?:\d|[0-8]\d+))\.t/i)

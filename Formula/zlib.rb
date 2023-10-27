@@ -9,6 +9,11 @@ class Zlib < Formula
   license "Zlib"
   head "https://github.com/madler/zlib.git", branch: "develop"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "361e18418d698a812612f774221dd091034c61ee8dbd3e0ca2fa8351cf41e6f3"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?zlib[._-]v?(\d+(?:\.\d+)+)\.t/i)

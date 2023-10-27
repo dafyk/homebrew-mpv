@@ -3,6 +3,11 @@ class Libdvdnav < Formula
   homepage "https://www.videolan.org/developers/libdvdnav.html"
   license "GPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "a1e318505d323751a6dae62ddf62ba66167d1bf85fa3f42fae22571164871c27"
+  end
+
   stable do
     url "https://download.videolan.org/pub/videolan/libdvdnav/6.1.1/libdvdnav-6.1.1.tar.bz2"
     sha256 "c191a7475947d323ff7680cf92c0fb1be8237701885f37656c64d04e98d18d48"

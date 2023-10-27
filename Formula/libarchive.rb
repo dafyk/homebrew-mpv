@@ -5,6 +5,11 @@ class Libarchive < Formula
   sha256 "04357661e6717b6941682cde02ad741ae4819c67a260593dfb2431861b251acb"
   license "BSD-2-Clause"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "2077dd710df84ea4d211f04d6eab334b16de5134707fa75fb405f231dad467cf"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?libarchive[._-]v?(\d+(?:\.\d+)+)\.t/i)

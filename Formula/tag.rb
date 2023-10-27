@@ -6,6 +6,11 @@ class Tag < Formula
   license "MIT"
   head "https://github.com/jdberry/tag.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "8fdb9377189d48187666a40b6a651e4f0d3a037411d330e5acde24455fbf1d5c"
+  end
+
   depends_on :macos
 
   def install

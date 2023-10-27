@@ -8,6 +8,11 @@ class X264 < Formula
   license "GPL-2.0-only"
   head "https://code.videolan.org/videolan/x264.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "6cdaeef5077b82543a2e157955c789332d5812c6acbec653ea3a0c0bfb1ac17e"
+  end
+
   # Cross-check the abbreviated commit hashes from the release filenames with
   # the latest commits in the `stable` Git branch:
   # https://code.videolan.org/videolan/x264/-/commits/stable

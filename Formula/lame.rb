@@ -5,6 +5,11 @@ class Lame < Formula
   sha256 "ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e"
   license "LGPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "eb7176027fb3cd2aebbf8cfaaedbe1b9653df12d9d7a50248b510aca98a99420"
+  end
+
   livecheck do
     url :stable
     regex(%r{url=.*?/lame[._-]v?(\d+(?:\.\d+)+)\.t}i)

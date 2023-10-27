@@ -6,6 +6,11 @@ class Trash < Formula
   license "MIT"
   head "https://github.com/ali-rantakari/trash.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "e2e1a37ffdda0d2128bf3d1f7441f082175857b8ab577111046429568f097af8"
+  end
+
   depends_on :macos
 
   conflicts_with "macos-trash", because: "both install a `trash` binary"

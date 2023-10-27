@@ -6,6 +6,11 @@ class Icu4c < Formula
   sha256 "818a80712ed3caacd9b652305e01afc7fa167e6f2e94996da44b90c2ab604ce1"
   license "ICU"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "85f2734ca1f3ccaaa5594fbcc0705bb838f498cb13a4195e8b10a1024b753c85"
+  end
+
   livecheck do
     url :stable
     regex(/^release[._-]v?(\d+(?:[.-]\d+)+)$/i)

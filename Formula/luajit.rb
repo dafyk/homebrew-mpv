@@ -19,6 +19,11 @@ class Luajit < Formula
   license "MIT"
   head "https://luajit.org/git/luajit.git", branch: "v2.1"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "38dc8699ec90dcdb575e03901767f453c03b6aa12061e7f27ffcd39342511489"
+  end
+
   livecheck do
     url "https://github.com/LuaJIT/LuaJIT/commits/v2.1"
     regex(/<relative-time[^>]+?datetime=["']?(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)["' >]/im)

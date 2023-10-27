@@ -7,6 +7,11 @@ class GobjectIntrospection < Formula
   sha256 "bd7babd99af7258e76819e45ba4a6bc399608fe762d83fde3cac033c50841bb4"
   license all_of: ["GPL-2.0-or-later", "LGPL-2.0-or-later", "MIT"]
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "acb9bddf714715711b5fbd2b3ddbe7886dae2a77e00b5d156e7d9b71216ba93f"
+  end
+
   depends_on "dafyk/mpv/bison" => :build
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/meson" => :build

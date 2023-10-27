@@ -6,6 +6,11 @@ class Coreutils < Formula
   sha256 "ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "1e1000551155fa3e26309f6fbe2a0255c62e199b79328eadce2829340ff9d3b1"
+  end
+
   depends_on "dafyk/mpv/gmp"
   uses_from_macos "gperf" => :build
 

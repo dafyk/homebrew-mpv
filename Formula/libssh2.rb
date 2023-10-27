@@ -7,6 +7,11 @@ class Libssh2 < Formula
   sha256 "3736161e41e2693324deb38c26cfdc3efe6209d634ba4258db1cecff6a5ad461"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "91ddfd52d45de71666d55735c4f05649b143d7b981209c7994b6d9f9cfa75230"
+  end
+
   livecheck do
     url "https://libssh2.org/download/"
     regex(/href=.*?libssh2[._-]v?(\d+(?:\.\d+)+)\./i)

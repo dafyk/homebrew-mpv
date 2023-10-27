@@ -6,6 +6,11 @@ class Openjpeg < Formula
   license "BSD-2-Clause"
   head "https://github.com/uclouvain/openjpeg.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "c63263a722e40fdae5d0e485442ce551461af91ed9fa004a0673f842c24be893"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/libpng"
   depends_on "dafyk/mpv/libtiff"

@@ -8,6 +8,11 @@ class Libplacebo < Formula
   license "LGPL-2.1-or-later"
   head "https://code.videolan.org/videolan/libplacebo.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "937923388006fd013ce669c944b0f8cf5f2eb267bc8eaeb1a8204c2db37a3515"
+  end
+
   depends_on "dafyk/mpv/meson" => :build
   depends_on "dafyk/mpv/ninja" => :build
   depends_on "dafyk/mpv/python@3.11" => :build

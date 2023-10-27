@@ -5,6 +5,11 @@ class Sdl2 < Formula
   sha256 "888b8c39f36ae2035d023d1b14ab0191eb1d26403c3cf4d4d5ede30e66a4942c"
   license "Zlib"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "dc10a688716b29e45c084a6650c8a300fb70aeeb1238cb4b6742aefa92c4a8c3"
+  end
+
   livecheck do
     url :stable
     regex(/release[._-](\d+(?:\.\d+)+)/i)

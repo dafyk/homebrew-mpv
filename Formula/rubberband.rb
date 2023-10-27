@@ -6,6 +6,11 @@ class Rubberband < Formula
   license "GPL-2.0-or-later"
   head "https://hg.sr.ht/~breakfastquay/rubberband", using: :hg
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "dcfaeded6d72a238812f916e278baec696a63814d247fb41863979323cb370ff"
+  end
+
   livecheck do
     url :homepage
     regex(/href=.*?rubberband[._-]v?(\d+(?:\.\d+)+)\.t/i)

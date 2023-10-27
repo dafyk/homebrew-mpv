@@ -6,6 +6,11 @@ class VulkanLoader < Formula
   license "Apache-2.0"
   head "https://github.com/KhronosGroup/Vulkan-Loader.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "71c740caab1447ea923274db2668428ef115f01b1109d2a09edf61d8f5412725"
+  end
+
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)

@@ -7,6 +7,11 @@ class Gettext < Formula
   sha256 "839a260b2314ba66274dae7d245ec19fce190a3aa67869bf31354cb558df42c7"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "48d4bb5437cec418e80d3ac5d7732ed4f182fe1da3141b02cbe86570865dc199"
+  end
+
   uses_from_macos "libxml2"
   uses_from_macos "ncurses"
 

@@ -5,6 +5,11 @@ class Pixman < Formula
   sha256 "ea1480efada2fd948bc75366f7c349e1c96d3297d09a3fe62626e38e234a625e"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "eca86d2f8359f6aed68c04ab3236d5398fe461e6b3df357a512c0fbca5779b7e"
+  end
+
   livecheck do
     url "https://cairographics.org/releases/?C=M&O=D"
     regex(/href=.*?pixman[._-]v?(\d+\.\d*[02468](?:\.\d+)*)\.t/i)

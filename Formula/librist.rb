@@ -6,6 +6,11 @@ class Librist < Formula
   license "BSD-2-Clause"
   head "https://code.videolan.org/rist/librist.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "7d001c396e96ad064476afa86e368c7d162ef64b7ddcbb0f0a3fc5c9f7ab8d5e"
+  end
+
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)

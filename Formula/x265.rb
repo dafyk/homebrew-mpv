@@ -6,6 +6,11 @@ class X265 < Formula
   license "GPL-2.0-only"
   head "https://bitbucket.org/multicoreware/x265_git.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "183a1dadce25b296fe0b37a4029c44551146988353e83522422a4181a40eb7ff"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/nasm" => :build
 

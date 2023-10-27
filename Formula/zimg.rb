@@ -6,6 +6,11 @@ class Zimg < Formula
   license "WTFPL"
   head "https://github.com/sekrit-twc/zimg.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "576e1479cbbb87744869db59482b637f13414ba6d648304384b2a6180fc898a9"
+  end
+
   depends_on "dafyk/mpv/autoconf" => :build
   depends_on "dafyk/mpv/automake" => :build
   depends_on "dafyk/mpv/libtool" => :build

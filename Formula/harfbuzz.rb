@@ -6,6 +6,11 @@ class Harfbuzz < Formula
   license "MIT"
   head "https://github.com/harfbuzz/harfbuzz.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "3e695c6357aad77a716b31cdad89fbefe94edbf0513412fe67e55936cdd485ff"
+  end
+
   depends_on "dafyk/mpv/gobject-introspection" => :build
   depends_on "dafyk/mpv/meson" => :build
   depends_on "dafyk/mpv/ninja" => :build

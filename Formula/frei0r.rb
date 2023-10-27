@@ -5,6 +5,11 @@ class Frei0r < Formula
   sha256 "dd6dbe49ba743421d8ced07781ca09c2ac62522beec16abf1750ef6fe859ddc9"
   license "GPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "c1f4a80fec8c5ec0c8cea5c074fa3d5e9770718e7eac50cc8fba892a030765f9"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
 
   def install

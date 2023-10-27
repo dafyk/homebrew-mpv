@@ -5,6 +5,11 @@ class Cjson < Formula
   sha256 "451131a92c55efc5457276807fc0c4c2c2707c9ee96ef90c47d68852d5384c6c"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "df6f5349071ab221fc7b08b1152ca1f3a5e91255cc7c5dd23f6eaf7585d9bc1c"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
 
   def install

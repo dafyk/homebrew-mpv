@@ -6,6 +6,11 @@ class Cairo < Formula
   license any_of: ["LGPL-2.1-only", "MPL-1.1"]
   head "https://gitlab.freedesktop.org/cairo/cairo.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "f942db9b0ee2a63d566607bd734647087683484e56ca9c3c30cf60847f14e4e8"
+  end
+
   livecheck do
     url "https://cairographics.org/releases/?C=M&O=D"
     regex(%r{href=(?:["']?|.*?/)cairo[._-]v?(\d+\.\d*[02468](?:\.\d+)*)\.t}i)

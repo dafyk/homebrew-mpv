@@ -5,6 +5,11 @@ class Libbluray < Formula
   sha256 "478ffd68a0f5dde8ef6ca989b7f035b5a0a22c599142e5cd3ff7b03bbebe5f2b"
   license "LGPL-2.1-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "c26fa8151e010cb904723267e0f7e5de35fa88543419d49743fdcf83d9060718"
+  end
+
   livecheck do
     url "https://download.videolan.org/pub/videolan/libbluray/"
     regex(%r{href=["']?v?(\d+(?:\.\d+)+)/?["' >]}i)

@@ -3,6 +3,11 @@ class Gmp < Formula
   homepage "https://gmplib.org/"
   license any_of: ["LGPL-3.0-or-later", "GPL-2.0-or-later"]
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "4517e6775c6e8c7a5fdc7b4bdd8a87413c713ca775e934787c3cfaa9f0d95801"
+  end
+
   stable do
     url "https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz"
     mirror "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz"

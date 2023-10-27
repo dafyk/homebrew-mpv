@@ -6,6 +6,11 @@ class Libvpx < Formula
   license "BSD-3-Clause"
   head "https://chromium.googlesource.com/webm/libvpx.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "620b177a74cb602b37009e401f64c464fb2220086af0c7c7cac5e981b9684ba0"
+  end
+
   depends_on "dafyk/mpv/yasm" => :build
 
   # Add Sonoma support (remove patch when supported in a `libvpx` version).

@@ -6,6 +6,11 @@ class Libogg < Formula
   license "BSD-3-Clause"
   head "https://gitlab.xiph.org/xiph/ogg.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "e6337a6437838f6e6a97f6bc03a9833ff2b3b3008de86506d6e5072a76e615c4"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
 
   def install

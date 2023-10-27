@@ -6,6 +6,11 @@ class Glslang < Formula
   license all_of: ["BSD-3-Clause", "GPL-3.0-or-later", "MIT", "Apache-2.0"]
   head "https://github.com/KhronosGroup/glslang.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "f84ea62c0b5b4d4fa3704015c35d5c9410709c9522bd306fd0900c9aeba6185c"
+  end
+
   livecheck do
     url :stable
     regex(/^v?(\d+(?:\.\d+)+)$/i)

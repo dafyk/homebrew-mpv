@@ -6,6 +6,11 @@ class Graphite2 < Formula
   license any_of: ["GPL-2.0-or-later", "LGPL-2.1-or-later", "MPL-1.1+"]
   head "https://github.com/silnrsi/graphite.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "a040316923e732def8dc6cf10997b232f87d34974c20b0d36b1dd673a84ec44d"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
 
   patch do

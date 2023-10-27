@@ -5,6 +5,11 @@ class Libsndfile < Formula
   sha256 "3799ca9924d3125038880367bf1468e53a1b7e3686a934f098b7e1d286cdb80e"
   license "LGPL-2.1-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "a1df843ec77ae7aa50d845aecdb68ed5b31ae5ccd32968241c2e0bab523eb889"
+  end
+
   livecheck do
     url :stable
     strategy :github_latest

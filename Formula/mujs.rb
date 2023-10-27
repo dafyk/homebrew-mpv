@@ -6,6 +6,11 @@ class Mujs < Formula
   license "ISC"
   head "https://github.com/ccxvii/mujs.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "e5feece88adfa9530a9158752aea446c342ab09c13514b689ff2f8ee7639ba54"
+  end
+
   livecheck do
     url "https://mujs.com/downloads/"
     regex(/href=.*?mujs[._-]v?(\d+(?:\.\d+)+)\.t/i)

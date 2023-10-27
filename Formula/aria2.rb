@@ -5,6 +5,11 @@ class Aria2 < Formula
   sha256 "58d1e7608c12404f0229a3d9a4953d0d00c18040504498b483305bcb3de907a5"
   license "GPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "85d86d9cd2c669b3b1a42b58c05a898042d839ec6c8f9fb3447c5ef0f56d646a"
+  end
+
   depends_on "dafyk/mpv/pkg-config" => :build
   depends_on "dafyk/mpv/gettext"
   depends_on "dafyk/mpv/libssh2"

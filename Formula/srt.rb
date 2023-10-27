@@ -6,6 +6,11 @@ class Srt < Formula
   license "MPL-2.0"
   head "https://github.com/Haivision/srt.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "804f1e7ebd89e990a91f1cfe0bc108f2cd83f779ee1a7613be26687ade76e401"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/pkg-config" => :build
   depends_on "dafyk/mpv/openssl@3"

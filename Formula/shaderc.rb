@@ -3,6 +3,11 @@ class Shaderc < Formula
   homepage "https://github.com/google/shaderc"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "3f4ea187a385c064838598e619462a3d2cd4abd2ae01576d302d1ff4d900398e"
+  end
+
   stable do
     url "https://github.com/google/shaderc/archive/refs/tags/v2023.2.tar.gz"
     sha256 "06c4e2fdd63d62b73450d7011b72e7720b416182fb883fb0aac0afe6db2df3f6"

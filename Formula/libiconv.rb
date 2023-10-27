@@ -6,6 +6,11 @@ class Libiconv < Formula
   sha256 "8f74213b56238c85a50a5329f77e06198771e70dd9a739779f4c02f65d971313"
   license all_of: ["GPL-3.0-or-later", "LGPL-2.0-or-later"]
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "d1afd538f564ea5017377343b859cc50e6e67d778edb2975fbe04eaa140d0ee9"
+  end
+
   keg_only :provided_by_macos
 
   depends_on :macos # is not needed on Linux, where iconv.h is provided by glibc

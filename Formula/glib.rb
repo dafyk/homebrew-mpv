@@ -7,6 +7,11 @@ class Glib < Formula
   sha256 "44eaab8b720877ce303c5540b657b126f12dc94972d9880b52959f43fb537b30"
   license "LGPL-2.1-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "07abfaae83bea6db6ceec054bcfdeea166887b531af236f43b38de5073e5d7cf"
+  end
+
   depends_on "dafyk/mpv/gettext" => :build
   depends_on "dafyk/mpv/meson" => :build
   depends_on "dafyk/mpv/ninja" => :build

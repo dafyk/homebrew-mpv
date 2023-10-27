@@ -6,6 +6,11 @@ class Ffmpeg < Formula
   license "GPL-2.0-or-later"
   head "https://github.com/FFmpeg/FFmpeg.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "5885badfa62824e54280f0aa469fa77b5f959731c2cfde9e9511723239dca76b"
+  end
+
   stable do
     url "https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz"
     sha256 "57be87c22d9b49c112b6d24bc67d42508660e6b718b3db89c44e47e289137082"

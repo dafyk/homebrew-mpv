@@ -5,6 +5,11 @@ class OpencoreAmr < Formula
   sha256 "483eb4061088e2b34b358e47540b5d495a96cd468e361050fae615b1809dc4a1"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "39c2d495f044a61128318dcc73db4d20cd1bebcdcbdc9b77f0fc3dcce867f177"
+  end
+
   livecheck do
     url :stable
     regex(%r{url=.*?/opencore-amr[._-]v?(\d+(?:\.\d+)+)\.t}i)

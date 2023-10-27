@@ -6,6 +6,11 @@ class Libmysofa < Formula
   license "BSD-3-Clause"
   head "https://github.com/hoene/libmysofa.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "502689f89b22767ba82ca2a738b2d417e742e1e923f0540615285e72ee834c29"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/cunit"
 

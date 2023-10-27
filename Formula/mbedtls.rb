@@ -6,6 +6,11 @@ class Mbedtls < Formula
   license "Apache-2.0"
   head "https://github.com/Mbed-TLS/mbedtls.git", branch: "development"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "1d5866ead861dd9d08ce3f3456ee387cb18db583d90d80898ea7336f43b7baca"
+  end
+
   livecheck do
     url :stable
     regex(/(?:mbedtls[._-])?v?(\d+(?:\.\d+)+)/i)

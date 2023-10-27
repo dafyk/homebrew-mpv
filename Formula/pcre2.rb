@@ -5,6 +5,11 @@ class Pcre2 < Formula
   sha256 "8d36cd8cb6ea2a4c2bb358ff6411b0c788633a2a45dabbf1aeb4b701d1b5e840"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "ff5aff42695236057de017d5ed3287ff766436a8d99277f63daa47f2cfc57306"
+  end
+
   livecheck do
     url :stable
     regex(/^pcre2[._-]v?(\d+(?:\.\d+)+)$/i)

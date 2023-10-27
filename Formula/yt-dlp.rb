@@ -7,6 +7,11 @@ class YtDlp < Formula
   sha256 "e026ea1c435ff36eef1215bc4c5bb8c479938b90054997ba99f63a4541fe63b4"
   license "Unlicense"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "d3c1eb2e26c866b45d1d532fcab7d2df0d93d7fcd29fb0cb13e4950f678ecd8d"
+  end
+
   depends_on "dafyk/mpv/python@3.11"
   depends_on "dafyk/mpv/aria2" => :recommended
 

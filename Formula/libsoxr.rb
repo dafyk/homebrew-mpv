@@ -5,6 +5,11 @@ class Libsoxr < Formula
   sha256 "b111c15fdc8c029989330ff559184198c161100a59312f5dc19ddeb9b5a15889"
   license "LGPL-2.1-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "87d1df84c992032c682f58e3428a9bfa87ca27d8275c05434a53861b731eb246"
+  end
+
   livecheck do
     url :stable
     regex(%r{url=.*?/soxr[._-]v?(\d+(?:\.\d+)+)(?:-Source)?\.t}i)

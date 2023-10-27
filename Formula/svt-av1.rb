@@ -6,6 +6,11 @@ class SvtAv1 < Formula
   license "BSD-3-Clause"
   head "https://gitlab.com/AOMediaCodec/SVT-AV1.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "c790d611c281af7892d3ca63f183480da5d00e48e5695d7e2f6322eee41597c5"
+  end
+
   depends_on "dafyk/mpv/cmake" => :build
   depends_on "dafyk/mpv/yasm" => :build
 

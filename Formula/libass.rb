@@ -5,6 +5,11 @@ class Libass < Formula
   sha256 "f0da0bbfba476c16ae3e1cfd862256d30915911f7abaa1b16ce62ee653192784"
   license "ISC"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "00f135e4a0c3cddeba82928a138d643fa5fb190773a2934343801a16dea4ff3e"
+  end
+
   depends_on "dafyk/mpv/pkg-config" => :build
   depends_on "dafyk/mpv/nasm" => :build
   depends_on "dafyk/mpv/freetype"
