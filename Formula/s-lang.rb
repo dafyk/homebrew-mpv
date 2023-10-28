@@ -6,6 +6,11 @@ class SLang < Formula
   sha256 "f9145054ae131973c61208ea82486d5dd10e3c5cdad23b7c4a0617743c8f5a18"
   license "GPL-2.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "018ad2a684926e6080577ff3101f788219e2f7f7a13cefda2647d91b867cdfa1"
+  end
+
   livecheck do
     url "https://www.jedsoft.org/releases/slang/"
     regex(/href=.*?slang[._-]v?(\d+(?:\.\d+)+)\.t/i)

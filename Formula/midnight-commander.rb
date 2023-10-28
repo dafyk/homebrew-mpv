@@ -6,6 +6,11 @@ class MidnightCommander < Formula
   sha256 "5ebc3cb2144b970c5149fda556c4ad50b78780494696cdf2d14a53204c95c7df"
   license "GPL-3.0-or-later"
 
+  bottle do
+    root_url "https://github.com/dafyk/homebrew-mpv/raw/main/Bottle"
+    sha256 high_sierra: "97b68931dbabecb9d576c17d43f9bdc3a508993a92fac2d7ff32d2ace347b1c5"
+  end
+
   livecheck do
     url "https://ftp.osuosl.org/pub/midnightcommander/"
     regex(/href=.*?mc[._-]v?(\d+(?:\.\d+)+)\.t/i)
